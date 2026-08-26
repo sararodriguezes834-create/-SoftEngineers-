@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteForge Digital — Convertimos desafíos en soluciones digitales</title>
+  <meta name="description" content="ByteForge Digital: desarrollo de software, aplicaciones web y móviles, automatización y consultoría tecnológica en Colombia.">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ======================= NAVBAR ======================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__brand">
+        <span class="navbar__brand-mark">&lt;/&gt;</span>
+        <span class="navbar__brand-text">ByteForge<span class="accent-turquoise">.</span>Digital</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#inicio" class="navbar__link">Inicio</a>
+        <a href="#nosotros" class="navbar__link">Nosotros</a>
+        <a href="#servicios" class="navbar__link">Servicios</a>
+        <a href="#tecnologias" class="navbar__link">Tecnologías</a>
+        <a href="#proceso" class="navbar__link">Proceso</a>
+        <a href="#testimonios" class="navbar__link">Testimonios</a>
+        <a href="#faq" class="navbar__link">FAQ</a>
+        <a href="#contacto" class="navbar__link navbar__link--cta">Contacto</a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= HERO / INICIO ======================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Software a la medida · Bogotá, Colombia</p>
+          <h1 class="hero__title">
+            Byte<span class="accent-turquoise">Forge</span> Digital
+          </h1>
+          <p class="hero__slogan">“Convertimos desafíos en soluciones digitales”</p>
+          <p class="hero__description">
+            Diseñamos y construimos software que automatiza procesos, potencia la
+            productividad de tu equipo y transforma la manera en que tus usuarios
+            interactúan con tu negocio.
+          </p>
+          <div class="hero__actions">
+            <a href="#servicios" class="btn btn--primary">Conoce nuestros servicios</a>
+            <a href="#contacto" class="btn btn--outline">Solicitar una consulta</a>
+          </div>
+        </div>
+
+        <!-- Elemento visual: consola de código animada -->
+        <div class="hero__visual">
+          <div class="code-window">
+            <div class="code-window__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="code-window__title">deploy.sh — byteforge</span>
+            </div>
+            <pre class="code-window__body"><code id="typedCode"></code><span class="cursor-blink">▍</span></pre>
+          </div>
+          <div class="hero__badge hero__badge--1">99.9% uptime</div>
+          <div class="hero__badge hero__badge--2">+120 proyectos</div>
+        </div>
+      </div>
+      <a href="#nosotros" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ======================= NOSOTROS ======================= -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <p class="eyebrow">Nosotros</p>
+        <h2 class="section__title">Ingeniería de software con propósito</h2>
+        <p class="section__lead">
+          Somos un equipo colombiano de desarrolladores, diseñadores y consultores
+          tecnológicos enfocados en construir productos digitales robustos,
+          escalables y pensados para las necesidades reales de cada cliente.
+          Acompañamos a empresas y emprendimientos desde la idea hasta la
+          implementación, priorizando calidad, seguridad y comunicación constante.
+        </p>
+
+        <div class="mv-grid">
+          <div class="mv-card">
+            <div class="mv-card__icon">🎯</div>
+            <h3>Misión</h3>
+            <p>
+              Crear soluciones de software confiables y personalizadas que ayuden
+              a las empresas a mejorar sus procesos mediante la tecnología.
+            </p>
+          </div>
+          <div class="mv-card">
+            <div class="mv-card__icon">🚀</div>
+            <h3>Visión</h3>
+            <p>
+              Convertirnos en una empresa reconocida en Latinoamérica por
+              desarrollar soluciones digitales innovadoras, eficientes y
+              centradas en las necesidades de los clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SERVICIOS ======================= -->
+    <section class="section section--alt" id="servicios">
+      <div class="container">
+        <p class="eyebrow">Servicios</p>
+        <h2 class="section__title">Todo lo que tu producto necesita</h2>
+        <p class="section__lead">
+          Cubrimos el ciclo completo de vida de tu software: desde la estrategia
+          hasta el soporte continuo después de la entrega.
+        </p>
+
+        <div class="cards-grid" id="servicesGrid">
+          <article class="service-card">
+            <div class="service-card__icon">🌐</div>
+            <h3>Desarrollo de aplicaciones web</h3>
+            <p>Plataformas rápidas, seguras y escalables construidas con tecnologías modernas.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">📱</div>
+            <h3>Desarrollo de aplicaciones móviles</h3>
+            <p>Apps nativas e híbridas pensadas para una experiencia fluida en cualquier dispositivo.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">🏢</div>
+            <h3>Sistemas empresariales personalizados</h3>
+            <p>Software a medida que se adapta a los procesos únicos de tu organización.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">⚙️</div>
+            <h3>Automatización de procesos</h3>
+            <p>Eliminamos tareas repetitivas y optimizamos flujos de trabajo internos.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">🎨</div>
+            <h3>Diseño de interfaces UI/UX</h3>
+            <p>Interfaces intuitivas y atractivas centradas en la experiencia del usuario.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">🛠️</div>
+            <h3>Mantenimiento y actualización de software</h3>
+            <p>Evolucionamos tus sistemas existentes para mantenerlos seguros y vigentes.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">🔗</div>
+            <h3>Integración de APIs y servicios externos</h3>
+            <p>Conectamos tu producto con pasarelas de pago, CRMs y otras plataformas clave.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">💡</div>
+            <h3>Consultoría tecnológica</h3>
+            <p>Te asesoramos en la definición de arquitectura, stack y hoja de ruta digital.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TECNOLOGÍAS ======================= -->
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <p class="eyebrow">Stack técnico</p>
+        <h2 class="section__title">Tecnologías que utilizamos</h2>
+        <p class="section__lead">
+          Seleccionamos la herramienta correcta para cada problema, no la más de moda.
+        </p>
+
+        <div class="tech-grid">
+          <div class="tech-chip"><span class="tech-chip__icon">🟧</span>HTML5</div>
+          <div class="tech-chip"><span class="tech-chip__icon">🟦</span>CSS3</div>
+          <div class="tech-chip"><span class="tech-chip__icon">🟨</span>JavaScript</div>
+          <div class="tech-chip"><span class="tech-chip__icon">⚛️</span>React</div>
+          <div class="tech-chip"><span class="tech-chip__icon">🟩</span>Node.js</div>
+          <div class="tech-chip"><span class="tech-chip__icon">🐍</span>Python</div>
+          <div class="tech-chip"><span class="tech-chip__icon">☕</span>Java</div>
+          <div class="tech-chip"><span class="tech-chip__icon">🗄️</span>MySQL</div>
+          <div class="tech-chip"><span class="tech-chip__icon">🔧</span>Git</div>
+          <div class="tech-chip"><span class="tech-chip__icon">🐙</span>GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= POR QUÉ ELEGIRNOS ======================= -->
+    <section class="section section--dark" id="por-que-elegirnos">
+      <div class="container">
+        <p class="eyebrow accent-turquoise-text">¿Por qué elegirnos?</p>
+        <h2 class="section__title section__title--light">Razones para trabajar con nosotros</h2>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>Soluciones personalizadas</h3>
+            <p>Cada proyecto se diseña desde cero según las necesidades reales del cliente.</p>
+          </div>
+          <div class="why-card">
+            <h3>Equipo especializado</h3>
+            <p>Profesionales con experiencia en distintas industrias y tecnologías.</p>
+          </div>
+          <div class="why-card">
+            <h3>Metodologías ágiles</h3>
+            <p>Entregas incrementales, transparentes y con retroalimentación constante.</p>
+          </div>
+          <div class="why-card">
+            <h3>Soporte y mantenimiento</h3>
+            <p>Acompañamiento continuo mucho después de la entrega del proyecto.</p>
+          </div>
+          <div class="why-card">
+            <h3>Comunicación constante</h3>
+            <p>Canales claros y directos con el cliente durante todo el proceso.</p>
+          </div>
+          <div class="why-card">
+            <h3>Seguridad y calidad</h3>
+            <p>Buenas prácticas de desarrollo y control de calidad en cada entrega.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PROCESO DE TRABAJO ======================= -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <p class="eyebrow">Metodología</p>
+        <h2 class="section__title">Nuestro proceso de trabajo</h2>
+        <p class="section__lead">Un camino claro y ordenado, desde la idea hasta el soporte continuo.</p>
+
+        <div class="process-track">
+          <div class="process-step">
+            <span class="process-step__number">01</span>
+            <h3>Análisis de necesidades</h3>
+            <p>Entendemos tu negocio, tus usuarios y el problema que queremos resolver.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">02</span>
+            <h3>Diseño de la solución</h3>
+            <p>Definimos arquitectura, flujo de usuario e interfaces antes de programar.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">03</span>
+            <h3>Desarrollo</h3>
+            <p>Construimos el producto en iteraciones cortas y visibles para el cliente.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">04</span>
+            <h3>Pruebas</h3>
+            <p>Validamos funcionalidad, rendimiento y seguridad antes del lanzamiento.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">05</span>
+            <h3>Implementación</h3>
+            <p>Desplegamos la solución en un entorno estable y monitoreado.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step__number">06</span>
+            <h3>Soporte y mantenimiento</h3>
+            <p>Damos seguimiento, corregimos y evolucionamos el producto en el tiempo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TESTIMONIOS ======================= -->
+    <section class="section section--alt" id="testimonios">
+      <div class="container">
+        <p class="eyebrow">Testimonios</p>
+        <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">
+              “ByteForge Digital automatizó procesos que nos tomaban días enteros.
+              Hoy los resolvemos en minutos y el equipo puede enfocarse en lo importante.”
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="testimonial-card__avatar">LM</span>
+              <div>
+                <strong>Laura Martínez</strong>
+                <span>Gerente de Innovación</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">
+              “Como startup necesitábamos velocidad sin sacrificar calidad. El equipo
+              entendió nuestra visión desde la primera reunión y la aplicación web
+              quedó lista antes de lo previsto.”
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="testimonial-card__avatar">AG</span>
+              <div>
+                <strong>Andrés Gómez</strong>
+                <span>Fundador de Startup</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">
+              “La integración con nuestros sistemas existentes fue impecable.
+              El soporte posterior a la entrega nos da mucha tranquilidad.”
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="testimonial-card__avatar">CR</span>
+              <div>
+                <strong>Camila Rodríguez</strong>
+                <span>Directora Administrativa</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FAQ ======================= -->
+    <section class="section" id="faq">
+      <div class="container">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 class="section__title">Resolvemos tus dudas</h2>
+
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              ¿Cuánto tarda desarrollar una aplicación?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Depende del alcance del proyecto. Una aplicación sencilla puede tomar de
+              4 a 6 semanas, mientras que un sistema empresarial complejo puede tardar
+              varios meses. Al inicio del proyecto entregamos un cronograma detallado.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              ¿Trabajan con empresas pequeñas?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sí. Trabajamos con emprendimientos, pymes y grandes empresas, adaptando
+              el alcance y el presupuesto del proyecto a las necesidades de cada cliente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              ¿Pueden actualizar un sistema existente?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Claro. Analizamos tu sistema actual, identificamos oportunidades de
+              mejora y realizamos actualizaciones sin interrumpir la operación del negocio.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              ¿Desarrollan aplicaciones móviles?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sí, desarrollamos aplicaciones móviles nativas e híbridas para iOS y
+              Android, según los requerimientos técnicos y de presupuesto del proyecto.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              ¿Ofrecen mantenimiento después de entregar el proyecto?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sí, ofrecemos planes de soporte y mantenimiento continuo para
+              garantizar que tu software siga funcionando de forma óptima y segura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACTO ======================= -->
+    <section class="section section--dark" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow accent-turquoise-text">Contacto</p>
+          <h2 class="section__title section__title--light">Hablemos de tu proyecto</h2>
+          <p class="section__lead section__lead--light">
+            Cuéntanos qué necesitas y te contactaremos para agendar una consulta
+            inicial sin costo.
+          </p>
+
+          <ul class="contact-details">
+            <li>
+              <span class="contact-details__icon">📍</span>
+              <div>
+                <strong>Ubicación</strong>
+                <span>Medellín, Colombia</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact-details__icon">✉️</span>
+              <div>
+                <strong>Correo</strong>
+                <span>contacto@byteforgedigital.com</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact-details__icon">🕒</span>
+              <div>
+                <strong>Horario</strong>
+                <span>Lunes a viernes, 8:00 a. m. – 5:00 p. m.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            <span class="form-error" id="error-nombre"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@empresa.com" required>
+            <span class="form-error" id="error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <option value="Desarrollo de aplicaciones web">Desarrollo de aplicaciones web</option>
+              <option value="Desarrollo de aplicaciones móviles">Desarrollo de aplicaciones móviles</option>
+              <option value="Sistemas empresariales personalizados">Sistemas empresariales personalizados</option>
+              <option value="Automatización de procesos">Automatización de procesos</option>
+              <option value="Diseño de interfaces UI/UX">Diseño de interfaces UI/UX</option>
+              <option value="Mantenimiento y actualización de software">Mantenimiento y actualización de software</option>
+              <option value="Integración de APIs y servicios externos">Integración de APIs y servicios externos</option>
+              <option value="Consultoría tecnológica">Consultoría tecnológica</option>
+            </select>
+            <span class="form-error" id="error-servicio"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto" required></textarea>
+            <span class="form-error" id="error-mensaje"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Enviar solicitud</button>
+
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="navbar__brand-mark">&lt;/&gt;</span>
+        <span class="navbar__brand-text">ByteForge<span class="accent-turquoise">.</span>Digital</span>
+        <p>Convertimos desafíos en soluciones digitales.</p>
+      </div>
+
+      <nav class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <p class="footer__copy">© 2026 ByteForge Digital. Empresa ficticia con fines de demostración.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
